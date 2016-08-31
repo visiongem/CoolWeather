@@ -1,7 +1,9 @@
-package com.pyn.coolweather;
+package com.pyn.coolweather.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.pyn.coolweather.R;
 
 public class MainActivity extends AppCompatActivity {
 
