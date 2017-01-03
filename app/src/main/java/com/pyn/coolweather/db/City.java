@@ -10,7 +10,7 @@ public class City extends DataSupport{
 
     private int id;
     private String cityName;    // 市名字
-    private String cityCode;    // 市的代码
+    private int cityCode;    // 市的代码
     private int provinceId;     // 当前所属省的id值
 
     public int getId() {
@@ -29,11 +29,11 @@ public class City extends DataSupport{
         this.cityName = cityName;
     }
 
-    public String getCityCode() {
+    public int getCityCode() {
         return cityCode;
     }
 
-    public void setCityCode(String cityCode) {
+    public void setCityCode(int cityCode) {
         this.cityCode = cityCode;
     }
 
