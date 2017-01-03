@@ -1,14 +1,16 @@
-package com.pyn.coolweather.model;
+package com.pyn.coolweather.db;
+
+import org.litepal.crud.DataSupport;
 
 /**
- * describtion:
+ * describtion: 省
  * Created by pengyn on 2016/8/31.
  */
-public class Province {
+public class Province extends DataSupport{
 
     private int id;
-    private String provinceName;
-    private String provinceCode;
+    private String provinceName;    // 省名字
+    private String provinceCode;    // 省的代号
 
     public int getId() {
         return id;

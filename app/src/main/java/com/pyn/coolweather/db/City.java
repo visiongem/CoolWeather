@@ -1,15 +1,17 @@
-package com.pyn.coolweather.model;
+package com.pyn.coolweather.db;
+
+import org.litepal.crud.DataSupport;
 
 /**
- * describtion:
+ * describtion: 市
  * Created by pengyn on 2016/8/31.
  */
-public class City {
+public class City extends DataSupport{
 
     private int id;
-    private String cityName;
-    private String cityCode;
-    private int provinceId;
+    private String cityName;    // 市名字
+    private String cityCode;    // 市的代码
+    private int provinceId;     // 当前所属省的id值
 
     public int getId() {
         return id;

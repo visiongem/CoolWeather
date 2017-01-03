@@ -1,15 +1,17 @@
-package com.pyn.coolweather.model;
+package com.pyn.coolweather.db;
+
+import org.litepal.crud.DataSupport;
 
 /**
- * describtion:
+ * describtion: 县
  * Created by pengyn on 2016/8/31.
  */
-public class County {
+public class County extends DataSupport{
 
     private int id;
-    private String countyName;
-    private String countyCode;
-    private int cityId;
+    private String countyName;  // 县的名字
+    private String countyCode;  // 县的代码
+    private int cityId;         // 当前县所属市的id值
 
     public int getId() {
         return id;
